@@ -1,0 +1,39 @@
+.header-logo{
+  width:2.5%;
+}
+
+.header-main{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: silver;
+  position: sticky;
+}
+
+.header-buttons {
+  display:flex;
+  gap:300px;
+}
+
+.header-button{
+  color: black;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1%;
+  background-color: #f1c40f;
+  border-radius: 10px;
+  transition: background-color 0.8s ease;
+  white-space: nowrap;
+}
+
+.header-button:hover{
+  /* Elegant contrast on hover */
+  background-color: #800020;
+  color: white;
+  /* Slightly larger on hover */
+  transform: scale(1.05);
+  /* Increased shadow on hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
