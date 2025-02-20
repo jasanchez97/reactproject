@@ -5,11 +5,11 @@ function Home() {
 
   return (
     <>
-    <Header/>
+      <Header />
       <h1>Super Smash Bros Brawl</h1>
       <h2>Descripción</h2>
       <p className="home-paragraph-main">Esto es la página Home</p>
-    <Footer/>
+      <Footer />
     </>
   )
 }

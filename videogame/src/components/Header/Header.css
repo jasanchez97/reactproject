@@ -1,6 +1,14 @@
-.header-logo{
-  width:2.5%;
+.header-logo {
+  transition: filter 0.8s ease-in-out, opacity 2s ease-in-out;
+  width: 2.7vw;
 }
+
+.header-logo:hover {
+  filter: blur(100px); /* Aplica un pequeño desenfoque al pasar el ratón */
+  opacity: 0.8; /* Hace que la imagen sea un poco transparente */
+  width: 2.7vw;
+}
+
 
 .header-main{
   display: flex;
@@ -17,11 +25,12 @@
 
 .header-button{
   color: black;
-  font-size: 100%;
+  font-size: 0.9vw;
   text-align: center;
+  align-items: center;
   text-decoration: none;
   font-weight: bold;
-  padding: 1%;
+  padding: 0.8vw;
   background-color: #f1c40f;
   border-radius: 10px;
   transition: background-color 0.8s ease;
