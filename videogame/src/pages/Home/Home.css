@@ -1,3 +1,5 @@
-.home-paragraph-main{
-  background-color: red;
+p {
+  text-align: justify;
+  padding-left: 5px;
+  width: 98.5vw;
 }
