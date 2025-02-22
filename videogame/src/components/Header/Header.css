@@ -1,48 +1,77 @@
+/* Estilo del contenedor principal */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 98vw;
+  padding-top: 5px;
+}
+
+/* Estilo de la imagen del logo */
 .header-logo {
-  transition: filter 0.8s ease-in-out, opacity 2s ease-in-out;
-  width: 2.7vw;
+  transition: filter 0.5s, opacity 2s, transform 2s ease;
+  transition-duration: 2s;
+  width: 6vw;
+  padding-left: 5px;
 }
 
 .header-logo:hover {
-  filter: blur(100px); /* Aplica un pequeño desenfoque al pasar el ratón */
-  opacity: 0.8; /* Hace que la imagen sea un poco transparente */
-  width: 2.7vw;
+  filter: brightness(1.3) contrast(1.2); /* Brillo y contraste para el efecto */
+  transition-duration: 2s;
 }
 
-
-.header-main{
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  background-color: silver;
-  position: sticky;
-}
-
+/* Estilo de los botones del header */
 .header-buttons {
-  display:flex;
-  gap:300px;
+  display: flex;
+  gap: 50px;
 }
 
-.header-button{
-  color: black;
-  font-size: 0.9vw;
+.header-button {
+  color: #f1faee;
+  font-size: 1.2vw;
   text-align: center;
-  align-items: center;
-  text-decoration: none;
   font-weight: bold;
-  padding: 0.8vw;
-  background-color: #f1c40f;
-  border-radius: 10px;
-  transition: background-color 0.8s ease;
+  padding: 0.8rem 2rem;
+  background-color: #ff6600; /* Color naranja vibrante */
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
   white-space: nowrap;
+  border: 2px solid #ff6600; /* Borde color naranja */
 }
 
-.header-button:hover{
-  /* Elegant contrast on hover */
-  background-color: #800020;
-  color: white;
-  /* Slightly larger on hover */
-  transform: scale(1.05);
-  /* Increased shadow on hover */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+/* Efectos cuando el ratón pasa por encima del botón */
+.header-button:hover {
+  background-color: #ff4c00; /* Cambia a un naranja más oscuro */
+  color: #f1faee; /* Mantiene el texto blanco */
+  transform: scale(1.1); /* Aumenta el tamaño del botón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Más sombra */
+  border: 2px solid #f1faee; /* Cambia el borde a blanco */
+}
+
+/* Estilos para el texto en botones en dispositivos móviles */
+@media (max-width: 768px) {
+  .header-logo {
+    width: 10vw; /* Aumenta el tamaño del logo en pantallas pequeñas */
+  }
+
+  .header-buttons {
+    gap: 30px; /* Reduce el espacio entre botones en móviles */
+  }
+
+  .header-button {
+    font-size: 4vw; /* Aumenta el tamaño del texto en dispositivos móviles */
+    padding: 2.5vw 6vw; /* Aumenta el padding */
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+  
+
 }

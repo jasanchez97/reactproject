@@ -1,0 +1,53 @@
+/* Fuente personalizada con Press Start 2P */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.information-container {
+    background-image: url('/images/FinalDestinationBackground.jpg');
+    /* Ruta de la imagen */
+    background-size: cover;
+    /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center;
+    /* Centra la imagen */
+    background-attachment: fixed;
+    /* Hace que la imagen no se mueva al hacer scroll */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    color: #f1faee;
+    /* Ajusta el color de texto, dependiendo de la imagen */
+    width: 98vw;
+    z-index: -1;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem; /* Ajusta el tamaño del texto */
+  text-align: center;
+  color: white; /* Color del texto */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 3px; /* Ajuste en el espacio entre letras */
+  margin-top: 10vh; /* Espacio superior */
+  padding: 10px;
+}
+
+/* Estilo de sombra suave para el texto */
+h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra suave */
+}
+
+
+
+p {
+    font-family: 'Orbitron';
+    color: white;
+    /* Color del texto */
+    font-size: 1.8rem;
+    /* Tamaño de la fuente (ajústalo según tu necesidad) */
+    font-weight: bold;
+    /* Opcional, para hacer el texto más grueso */
+    text-shadow:
+        -1.5px -1.5px 0 #000,
+        1.5px -1.5px 0 #000,
+        -1.5px 1.5px 0 #000,
+        1.5px 1.5px 0 #000;
+    /* El contorno negro alrededor del texto */
+}

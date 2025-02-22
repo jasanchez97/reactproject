@@ -1,9 +1,11 @@
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
+import "./Information.css"
 
 function Information() {
+  
   return (
-    <>
+    <div className="information-container">
       <Header />
       <h1>Desarrollo a lo largo de la historia</h1>
       <p>Super Smash Bros Brawl es un videojuego de lucha distribuido por Nintendo para la videoconsola Wii. Como la tercera entrega de la serie Super Smash Bros, la lista de personajes de Brawl se expande con respecto a la de su predecesor Super Smash Bros Melee, y es el primer juego dentro de la serie en presentar personajes de franquicias externas a Nintendo, con la inclusión de Solid Snake de la serie Metal Gear de Konami, y Sonic de la serie Sonic the Hedgehog de Sega.<br></br><br></br>
@@ -17,7 +19,7 @@ function Information() {
       Las melodías del juego, que fueron compuestas gracias a 38 compositores especializados en videojuegos, fueron elogiadas por su representación de distintas generaciones en la historia de los videojuegos. Recibió una calificación de un 93% en Metacritic y de un 92.75% en Game Rankings. Brawl fue calificado como el «Mejor videojuego de lucha del año» en 2008 por la Academy of Interactive Arts & Sciences.<br></br><br></br>
       En 2010, el juego fue incluido como uno de los títulos del libro 1001 videojuegos a los que hay que jugar antes de morir, y también se considera uno de los mejores videojuegos jamás creados. A partir de 2023, es el octavo juego de Wii más vendido de todos los tiempos, con más de 13 millones de copias vendidas en todo el mundo. Le siguió Super Smash Bros. para Nintendo 3DS y Wii U en 2014.</p>
       <Footer />
-    </>
+    </div>
   )
 }
 

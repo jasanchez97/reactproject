@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
+import "./Home.css"
 
 function Home() {
 
@@ -8,7 +9,7 @@ function Home() {
       <Header />
       <h1>Super Smash Bros Brawl</h1>
       <h2>Descripción</h2>
-      <p className="home-paragraph-main">Esto es la página Home</p>
+      <p>Esto es la página Home</p>
       <Footer />
     </>
   )
