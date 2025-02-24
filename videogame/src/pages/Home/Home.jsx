@@ -1,23 +1,24 @@
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import "./Home.css";
-
+import videoSrc from "/video/SSBBFinalDestination.mp4";
 function Home() {
 
-  function BackgroundVideo() {
-    return (
-      <div className="video-container">
-        <iframe
-          src="/video/SSBBFinalDestination.mp4"
-        ></iframe>
-      </div>
-    );
-  }
+const VideoBackground = () => {
+  return (
+    <div className="video-container">
+      <video className="background-video" autoPlay loop muted playsInline >
+        <source src={videoSrc} type="video/mp4" />
+        Tu navegador no soporta videos.
+      </video>
+    </div>
+  );
+};
 
   return (
     <>
       <Header />
-
+      <VideoBackground />
       <h1>Super Smash Bros Brawl</h1>
       <h2>Descripción</h2>
       <p className="paragraph">
@@ -44,7 +45,7 @@ function Home() {
         <br />
         En resumen, Super Smash Bros. Brawl no solo es uno de los juegos de lucha más destacados de la historia, sino que también marcó una evolución importante en la manera en que se conciben los videojuegos de lucha en consolas caseras. Con su extenso elenco de personajes, escenarios interactivos y un modo de historia único, el juego sigue siendo una experiencia única para los fanáticos de los videojuegos.
       </p>
-      <BackgroundVideo />
+      
       <Footer />
     </>
   );
