@@ -1,9 +1,21 @@
+.paragraph-main{
+  margin-top: 45%;
+}
+
 .paragraph {
+  text-indent: 50px;
+  position: static;
   font-family: "Julius Sans One", serif;
-  font-weight: 1000;
-  font-style: bold;
   text-align: justify;
+  margin-top: 10%;
   padding-left: 80px;
   max-width: 90vw;
   align-items: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 
+    -2px -2px 0px black,  
+     2px -2px 0px black,  
+    -2px  2px 0px black,  
+     2px  2px 0px black; /* Sombra negra con desenfoque */
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import videoSrc from "https://www.youtube.com/watch?v=7m3X27TYzok&ab_channel=DyllonStejGaming";
+import videoSrc from "../videos/SSBBFinalDestination.webm";
 import "./BackgroundVideo.css"; // Asegúrate de importar correctamente el archivo CSS
 
 function BackgroundVideo() {
