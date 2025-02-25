@@ -1,25 +1,14 @@
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import "./Home.css";
-import videoSrc from "/video/SSBBFinalDestination.mp4";
-function Home() {
+import BackgroundVideo from "../../components/BackgroundVideo/BackgroundVideo";
 
-const VideoBackground = () => {
-  return (
-    <div className="video-container">
-      <video className="background-video" autoPlay loop muted playsInline >
-        <source src={videoSrc} type="video/mp4" />
-        Tu navegador no soporta videos.
-      </video>
-    </div>
-  );
-};
+function Home() {
 
   return (
     <>
       <Header />
-      <VideoBackground />
-      <h1>Super Smash Bros Brawl</h1>
+      <BackgroundVideo />
       <h2>Descripción</h2>
       <p className="paragraph">
         Super Smash Bros. Brawl es un juego de lucha desarrollado por Nintendo para la consola Wii, lanzado en 2008. Es la tercera entrega de la icónica serie Super Smash Bros., y marcó un hito al incorporar personajes de franquicias ajenas a Nintendo, como Solid Snake de Metal Gear y Sonic de Sonic the Hedgehog, llevando la serie a un público aún más amplio.
@@ -45,7 +34,7 @@ const VideoBackground = () => {
         <br />
         En resumen, Super Smash Bros. Brawl no solo es uno de los juegos de lucha más destacados de la historia, sino que también marcó una evolución importante en la manera en que se conciben los videojuegos de lucha en consolas caseras. Con su extenso elenco de personajes, escenarios interactivos y un modo de historia único, el juego sigue siendo una experiencia única para los fanáticos de los videojuegos.
       </p>
-      
+
       <Footer />
     </>
   );
