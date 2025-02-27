@@ -32,6 +32,7 @@
 }
 
 .header-button {
+  position: relative;
   color: #f1faee;
   font-size: 1.2vw;
   text-align: center;
@@ -44,6 +45,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
   white-space: nowrap;
   border: 2px solid #ff6600; /* Borde color naranja */
+  overflow: hidden; /* Asegura que el pseudo-elemento no se escape del borde */
 }
 
 /* Efectos cuando el ratón pasa por encima del botón */
@@ -55,21 +57,33 @@
   border: 2px solid #f1faee; /* Cambia el borde a blanco */
 }
 
-/* Estilos para el texto en botones en dispositivos móviles */
-@media (max-width: 768px) {
-  .header-logo {
-    width: 10vw; /* Aumenta el tamaño del logo en pantallas pequeñas */
-  }
-
-  .header-buttons {
-    gap: 30px; /* Reduce el espacio entre botones en móviles */
-  }
-
-  .header-button {
-    font-size: 4vw; /* Aumenta el tamaño del texto en dispositivos móviles */
-    padding: 2.5vw 6vw; /* Aumenta el padding */
-  }
+/* Efecto de barrido de color cuando el botón es clickeado */
+.header-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f1faee; /* Color del barrido */
+  transition: left 0.3s ease; /* Cambié el tiempo a 0.3s para que sea rápido */
+  z-index: -1; /* Asegura que el barrido esté detrás del texto */
 }
+
+/* Clase activada con JavaScript para el barrido */
+.header-button.clicked::after {
+  left: 100%;
+}
+
+/* Efecto de cambio de color y sombra al hacer click */
+.header-button:active {
+  background-color: #ff4c00; /* Color más oscuro */
+  color: #f1faee;
+  border: 2px solid #f1faee; /* Bordes blancos al hacer clic */
+  transform: scale(1.05); /* Leve reducción para efecto de clic */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
