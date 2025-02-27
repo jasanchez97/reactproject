@@ -1,5 +1,5 @@
 import React from "react";
-import videoSrc from "../videos/SSBBFinalDestination.webm";
+import videoSrc from "../videos/SSBBFinalDestination.mp4";
 import "./BackgroundVideo.css"; // Asegúrate de importar correctamente el archivo CSS
 
 function BackgroundVideo() {
