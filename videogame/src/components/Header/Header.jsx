@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 import useSound from "use-sound";
-import WiiMenuBanner from "../sounds/WiiMenuBanner.mp3";
+import WiiMenuBanner from "/sounds/WiiMenuBanner.mp3";
 
 function Header() {
   const [smashLogo, setSmashLogo] = useState("/images/SmashLogo.png");

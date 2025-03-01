@@ -16,18 +16,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.img-title {
-  width: 40%;
-  position: absolute;
-  top: 45vh;
-  left: 30vw;
-}

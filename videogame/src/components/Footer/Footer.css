@@ -1,0 +1,26 @@
+#tabuu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 30%;
+    margin-top: 1000px;
+    left: 32vw;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@font-face {
+    font-family: "Brawler";
+    src: url("../fonts/brawler.ttf") format("truetype");
+  }
+  
+  .footer-p-font {
+      font-family: "Brawler", serif;
+  }
+
+.footer-img{
+    width: 8vw;
+}
