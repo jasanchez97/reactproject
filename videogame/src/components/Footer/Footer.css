@@ -10,6 +10,8 @@
 .footer-main {
     display: flex;
     justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @font-face {
@@ -23,4 +25,14 @@
 
 .footer-img{
     width: 8vw;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
