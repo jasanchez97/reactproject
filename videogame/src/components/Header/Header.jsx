@@ -4,15 +4,15 @@ import useSound from "use-sound";
 import WiiMenuBanner from "/sounds/WiiMenuBanner.mp3";
 
 function Header() {
-  const [smashLogo, setSmashLogo] = useState("/images/SmashLogo.png");
+  const [smashLogo, setSmashLogo] = useState("/images/misc/SmashLogo.png");
 
   const handleMouseEnter = () => {
-    setSmashLogo("/images/SmashLogoMouseIn.png");
+    setSmashLogo("/images/misc/SmashLogoMouseIn.png");
     playSound();
   };
 
   const handleMouseOut = () => {
-    setSmashLogo("/images/SmashLogo.png");
+    setSmashLogo("/images/misc/SmashLogo.png");
   };
 
   const [playSound] = useSound(WiiMenuBanner, { volume: 0.3 });

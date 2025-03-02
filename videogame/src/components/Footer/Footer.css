@@ -10,26 +10,17 @@
 .footer-main {
     display: flex;
     justify-content: space-evenly;
-    max-width: 1200px;
+    width: 90vw;
     margin: 0 auto;
+    gap: 80px;
 }
-
-@font-face {
-    font-family: "Brawler";
-    src: url("../fonts/brawler.ttf") format("truetype");
-  }
-  
-  .footer-p-font {
-      font-family: "Brawler", serif;
-  }
 
 .footer-img{
-    width: 8vw;
+    width: 8%;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+a {
+    color: #007bff;
     margin: 0 10px;
 }
 

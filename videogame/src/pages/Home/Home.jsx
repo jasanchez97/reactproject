@@ -9,7 +9,7 @@ function Home() {
     <>
       <Header />
       <BackgroundVideo />
-      <img className="home-main-logo" src="/images/SSBBGameLogo.png" />
+      <img className="home-main-logo" src="/images/misc/SSBBGameLogo.png" />
       <div className="paragraph-main">
         <div><img className="paragraph-background" src="/videos/SmashUltimateLogo.gif" id="p-background-1" /></div>
         <p className="paragraph" >
