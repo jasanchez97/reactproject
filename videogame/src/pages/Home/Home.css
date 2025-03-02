@@ -16,7 +16,7 @@ body{
   transform-origin: center;
 }
 
-.paragraph {
+/* .paragraph {
   text-indent: 50px;
   position: static;
   font-family: "Julius Sans One", serif;
@@ -34,7 +34,7 @@ body{
     2px 2px 0px black;
   transform: perspective(800px) rotateX(25deg);
   transform-origin: center;
-}
+} */
 
 .paragraph-background {
   position: absolute;
