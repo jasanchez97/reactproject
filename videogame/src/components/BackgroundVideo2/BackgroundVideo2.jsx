@@ -9,4 +9,4 @@ function BackgroundVideo2() {
     );
 }
 
-export default BackgroundVideo2;  // Aquí debe estar la exportación por defecto
+export default BackgroundVideo2;

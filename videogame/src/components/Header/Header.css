@@ -1,4 +1,3 @@
-/* Estilo del contenedor principal */
 .header-main {
   display: flex;
   justify-content: space-between;
@@ -10,9 +9,8 @@
   padding-top: 5px;
 }
 
-/* Estilo de la imagen del logo */
 .header-logo {
-  display:flex;
+  display: flex;
   position: relative;
   transition: filter 0.5s, opacity 2s, transform 2s ease;
   transition-duration: 2s;
@@ -21,59 +19,68 @@
 }
 
 .header-logo:hover {
-  filter: brightness(1.3) contrast(1.2); /* Brillo y contraste para el efecto */
+  filter: brightness(1.3) contrast(1.2);
   transition-duration: 2s;
 }
 
-/* Estilo de los botones del header */
 .header-buttons {
   display: flex;
   gap: 50px;
 }
 
 .header-button {
+  font-family: 'Roboto', serif;
   color: #f1faee;
   font-size: 1.2vw;
   text-align: center;
   font-weight: bold;
   padding: 0.8rem 2rem;
-  background-color: #ff6600; /* Color naranja vibrante */
+  background-color: #ff6600;
   border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
-  border: 2px solid #ff6600; /* Borde color naranja */
+  border: 2px solid #ff6600;
 }
 
-/* Efectos cuando el ratón pasa por encima del botón */
 .header-button:hover {
-  background-color: #ff4c00; /* Cambia a un naranja más oscuro */
-  color: #f1faee; /* Mantiene el texto blanco */
-  transform: scale(1.1); /* Aumenta el tamaño del botón */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Más sombra */
-  border: 2px solid #f1faee; /* Cambia el borde a blanco */
+  background-color: #ff4c00;
+  color: #f1faee;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #f1faee;
 }
 
-/* Estilos para el texto en botones en dispositivos móviles */
 @media (max-width: 768px) {
   .header-logo {
-    width: 10vw; /* Aumenta el tamaño del logo en pantallas pequeñas */
+    width: 10vw;
   }
 
   .header-buttons {
-    gap: 30px; /* Reduce el espacio entre botones en móviles */
+    gap: 30px;
   }
 
   .header-button {
-    font-size: 4vw; /* Aumenta el tamaño del texto en dispositivos móviles */
-    padding: 2.5vw 6vw; /* Aumenta el padding */
+    font-size: 4vw;
+    padding: 2.5vw 6vw;
   }
 }
 
+@media only screen and (min-width: 1px) and (max-width: 768px) {
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1024px) {
-  
+   .header-main{
+     position: sticky;
+     width: 96vw;
+     z-index: 10;
+   }
 
+   .header-logo{
+     width: 20vw;
+   }
+
+   .header-buttons{
+     display: flex;
+     flex-direction: column;
+   }
 }

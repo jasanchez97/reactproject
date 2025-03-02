@@ -1,7 +1,3 @@
-body{
-  overflow-x: hidden;
-}
-
 .home-main-logo {
   width: 40%;
   position: relative;
@@ -16,7 +12,7 @@ body{
   transform-origin: center;
 }
 
-/* .paragraph {
+.home-paragraph {
   text-indent: 50px;
   position: static;
   font-family: "Julius Sans One", serif;
@@ -34,7 +30,8 @@ body{
     2px 2px 0px black;
   transform: perspective(800px) rotateX(25deg);
   transform-origin: center;
-} */
+  font-size: 24px;
+}
 
 .paragraph-background {
   position: absolute;
@@ -93,4 +90,28 @@ body{
   width: 85%;
   top: 87%;
   left: 7.8vw;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+
+  .home-main-logo {
+    position: relative;
+    top: 22.50vh;
+    left: 10vw;
+    width: 80%;
+  }
+
+  .home-paragraph {
+    font-size: 18px;
+    padding-left: 0%;
+    margin-left: 4.25%;
+    margin-bottom: 200px;
+  }
+
+  #tabuu {
+    position: relative;
+    left: 15%;
+    width: 65%;
+    margin-top: 100px;
+  }
 }

@@ -1,89 +1,51 @@
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
+import personajes from '../../data/characters.json'
+import { useState, useEffect } from 'react';
+import './Gallery.css';
 
 function Gallery() {
+  const [personajesList, setPersonajesList] = useState([]);
+
+  useEffect(() => {
+    setPersonajesList(personajes);
+  }, [personajes]);
+
+  const personajesNormales = personajesList.filter(personaje => personaje.categoria === 'Iniciales');
+  const personajesDesbloqueables = personajesList.filter(personaje => personaje.categoria === 'Desbloqueables');
+  const jefes = personajesList.filter(personaje => personaje.categoria === 'Jefes');
+
   return (
     <>
       <Header />
-      <h1>Personajes</h1>
-      <p>En esta sección se muestran los personajes de Super Smash Bros Brawl</p>
-      <div class="grid-container">
-        <div class="grid-item">
-          <p>Mario</p>
-          <img src="https://via.placeholder.com/250x250?text=Mario" alt="Mario" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Link</p>
-          <img src="https://via.placeholder.com/250x250?text=Link" alt="Link" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Kirby</p>
-          <img src="https://via.placeholder.com/250x250?text=Kirby" alt="Kirby" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Fox</p>
-          <img src="https://via.placeholder.com/250x250?text=Fox" alt="Fox" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Pikachu</p>
-          <img src="https://via.placeholder.com/250x250?text=Pikachu" alt="Pikachu" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Samus</p>
-          <img src="https://via.placeholder.com/250x250?text=Samus" alt="Samus" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Donkey Kong</p>
-          <img src="https://via.placeholder.com/250x250?text=Donkey+Kong" alt="Donkey Kong" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Yoshi</p>
-          <img src="https://via.placeholder.com/250x250?text=Yoshi" alt="Yoshi" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Luigi</p>
-          <img src="https://via.placeholder.com/250x250?text=Luigi" alt="Luigi" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Ness</p>
-          <img src="https://via.placeholder.com/250x250?text=Ness" alt="Ness" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Captain Falcon</p>
-          <img src="https://via.placeholder.com/250x250?text=Captain+Falcon" alt="Captain Falcon" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Jigglypuff</p>
-          <img src="https://via.placeholder.com/250x250?text=Jigglypuff" alt="Jigglypuff" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Peach</p>
-          <img src="https://via.placeholder.com/250x250?text=Peach" alt="Peach" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Bowser</p>
-          <img src="https://via.placeholder.com/250x250?text=Bowser" alt="Bowser" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Ice Climbers</p>
-          <img src="https://via.placeholder.com/250x250?text=Ice+Climbers" alt="Ice Climbers" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Pit</p>
-          <img src="https://via.placeholder.com/250x250?text=Pit" alt="Pit" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Wario</p>
-          <img src="https://via.placeholder.com/250x250?text=Wario" alt="Wario" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Snake</p>
-          <img src="https://via.placeholder.com/250x250?text=Snake" alt="Snake" class="character-image" />
-        </div>
-        <div class="grid-item">
-          <p>Ike</p>
-          <img src="https://via.placeholder.com/250x250?text=Ike" alt="Ike" class="character-image" />
-        </div>
+      <h1 id="gallery-title">Personajes</h1>
+      <p id="gallery-p">En esta sección se muestran los personajes de Super Smash Bros Brawl</p>
+      <div className="grid-container" id="personajes">
+        <h2 className="grid-container-title">Personajes</h2>
+        {personajesNormales.map((personaje) => (
+          <div className="card" key={personaje.nombre}>
+            <h2>{personaje.nombre}</h2>
+            <img src={`images/characters/${personaje.nombre}.png`} />
+          </div>
+        ))}
+      </div>
+      <div className="grid-container" id="desbloqueables">
+        <h2 className="grid-container-title">Desbloqueables</h2>
+        {personajesDesbloqueables.map((personaje) => (
+          <div className="card" key={personaje.nombre}>
+            <h2>{personaje.nombre}</h2>
+            <img src={`images/characters/${personaje.nombre}.png`} />
+          </div>
+        ))}
+      </div>
+      <div className="grid-container" id="jefes">
+        <h2 className="grid-container-title">Jefes</h2>
+        {jefes.map((personaje) => (
+          <div className="card" key={personaje.nombre}>
+            <h2>{personaje.nombre}</h2>
+            <img src={`images/characters/${personaje.nombre}.png`} />
+          </div>
+        ))}
       </div>
       <Footer />
     </>
