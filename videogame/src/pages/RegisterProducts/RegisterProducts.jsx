@@ -9,7 +9,7 @@ function RegisterProducts() {
         <>
             <Header />
             <BackgroundVideo4 />
-            <div>
+            <div className="crud-main">
                 <h1>Registro de Productos</h1>
                 <Crud />
             </div>
