@@ -1,8 +1,19 @@
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
+import useSound from "use-sound";
+import ButtonSound from "/sounds/MainMenuSound.mp3";
 import "./Information.css"
 
 function Information() {
+
+  const handleButtonClick = (url) => {
+    playButtonSound();
+    setTimeout(() => {
+      window.location.href = url;
+    }, 800);
+  };
+
+  const [playButtonSound] = useSound(ButtonSound, { volume: 0.3 });
 
   return (
     <div className="information-container">
@@ -42,6 +53,8 @@ function Information() {
         <p className="information-paragraph">Y también se considera uno de los mejores videojuegos jamás creados. A partir de 2023, es el octavo juego de Wii más vendido de todos los tiempos.</p>
 
         <p className="information-paragraph">Con más de 13 millones de copias vendidas en todo el mundo. Le siguió Super Smash Bros. para Nintendo 3DS y Wii U en 2014.</p>
+
+        <a onClick={() => handleButtonClick("/registerproducts")} className="information-button">Registros de copias vendidas en base a solicitudes en esta página</a>
       </div>
       <Footer />
     </div>

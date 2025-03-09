@@ -3,7 +3,7 @@ import Home from "./pages/Home/Home"
 import Information from "./pages/Information/Information"
 import Gallery from "./pages/Gallery/Gallery"
 import PolicyConditions from "./pages/PoliticyConditions/PolicyConditions"
-import Crud from "./pages/RegisterProducts/Crud"
+import RegisterProducts from "./pages/RegisterProducts/RegisterProducts"
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
         <Route path="/information" element={<Information />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/policyconditions" element={<PolicyConditions />} />
-        <Route path="/crud" element={<Crud />} />
+        <Route path="/registerproducts" element={<RegisterProducts />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

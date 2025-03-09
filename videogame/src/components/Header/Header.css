@@ -29,7 +29,7 @@
 }
 
 .header-button {
-  font-family: 'Roboto', serif;
+  font-family: 'Press Start 2P', serif;
   color: #f1faee;
   font-size: 1.2vw;
   text-align: center;
@@ -42,6 +42,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
   border: 2px solid #ff6600;
+  cursor:pointer;
 }
 
 .header-button:hover {

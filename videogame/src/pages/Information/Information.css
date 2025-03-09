@@ -42,6 +42,36 @@ h1 {
   text-align: justify;
 }
 
+.information-button {
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  position: relative;
+  left: 7vw;
+  font-family: 'Press Start 2P', serif;
+  color: #f1faee;
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  background-color: #ff6600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  border: 2px solid #ff6600;
+  cursor:pointer;
+}
+
+.information-button:hover {
+  background-color: #ff4c00;
+  color: #f1faee;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #f1faee;
+}
+
 @media only screen and (min-width: 1px) and (max-width: 768px) {
 
   .information-container {

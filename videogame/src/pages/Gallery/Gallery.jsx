@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer"
 import personajes from '../../data/characters.json'
 import { useState, useEffect } from 'react';
 import './Gallery.css';
+import BackgroundVideo3 from "../../components/BackgroundVideo3/BackgroundVideo3";
 
 function Gallery() {
   const [personajesList, setPersonajesList] = useState([]);
@@ -18,6 +19,7 @@ function Gallery() {
   return (
     <>
       <Header />
+      <BackgroundVideo3 />
       <h1 id="gallery-title">Personajes</h1>
       <p id="gallery-p">En esta sección se muestran los personajes de Super Smash Bros Brawl</p>
       <div className="grid-container" id="personajes">
